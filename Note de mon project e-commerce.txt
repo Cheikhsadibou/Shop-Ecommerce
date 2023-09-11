@@ -12,6 +12,8 @@ note de suivis :
 
 ===> s'inspirer de Doctring pour creer le ficher requirement.txt lien ( https://www.youtube.com/watch?v=odIR-00ggVI&list=PLmrnugnicuaN-IDo8WS7Bh_DNUHP_UINi )
 
+===> En cas d'erreur revoire le tuto sivants : ( [09]4 Fixing Products Warning and Empty Cart Issue)
+
 ===> 
 {% load static %}
 
@@ -108,4 +110,11 @@ note de suivis :
 </header>
 
 
-===> 
+===> A consulter   (How to use Q objects for complex queries? --Django) oubien regarder le tuto sur ([09]5 Search Function) à la 16 ieme minute
+
+===> {% if cart_user %}
+     <a href="#" class="btn  btn-success"> <span class="text">Added to cart</span> <i class="fas fa-check"></i></a>
+     <a href="{% url 'cart' %}" class="btn  btn-outline-primary"> <span class="text">Views cart</span> <i class="fas fa-eye"></i></a>
+     {% else %}
+     {% endif %}
+
